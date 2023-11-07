@@ -1,6 +1,6 @@
 #VBA-challenge
-![VBA](https://github.com/s0uravk/VBA-challenge/assets/144293972/208adcdd-61a9-4140-8987-58bf36e4e652)
 
+![VBA](https://github.com/s0uravk/VBA-challenge/assets/144293972/208adcdd-61a9-4140-8987-58bf36e4e652)
 
 
 Introduction : StockData Program will summarize essential parts of stockmarket such as Changes in stock price over the year, representated in Percentage as well. Then it shows which stock had gained the most, lost the most and been traded the most. And the best part is that it works through all the Worksheets present in a Workbook.
