@@ -13,11 +13,4 @@ Moreover, it will calculate the greatest percentage of increase , decrease in st
 
 Modification : A button can also be added by going to developer tab, selecting Insert in Controls and selection Button from Form Controls and then assign the name of project to that button. So all the data can be processed with just one click of a Button.
 
-Refrences : Regarding Conditioning Format part of the VBA code
-With Worksheets(ws).Range("j2:k" & row_count).FormatConditions.Add(xlCellValue, xlGreater, 0") 
- With 
-    .Interior.ColorIndex = 4 
- End With
-End With
-
-Intially, this code snipet was used to perform conditional formatting as per the MS excel documentation (https://learn.microsoft.com/en-us/office/vba/api/excel.formatconditions). But, it was throwing Type Mismatch Error when it was placed in a Loop to perform the same task in all the worksheets. Then, i contacted AskBCS and was suggested to declare the condition explicilty for the code to work and used it in the code.
+Refrences : Code snippet used to perform conditional formatting as per the MS excel documentation (https://learn.microsoft.com/en-us/office/vba/api/excel.formatconditions). 
