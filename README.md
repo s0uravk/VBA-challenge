@@ -13,4 +13,4 @@ Moreover, it will calculate the greatest percentage of increase , decrease in st
 
 Modification : A button can also be added by going to developer tab, selecting Insert in Controls and selection Button from Form Controls and then assign the name of project to that button. So all the data can be processed with just one click of a Button.
 
-Refrences : Code snippet used to perform conditional formatting as per the MS excel documentation (https://learn.microsoft.com/en-us/office/vba/api/excel.formatconditions). 
+Refrences : Code snippet used to perform conditional formatting as per the MS excel documentation (https://learn.microsoft.com/en-us/office/vba/api/excel.formatconditions). Firstly, I used if-else statement to compare the value and then assigning the interior color index based on the value but using conditional formating can make the code more efficient and can be used outside the loop as well. 
