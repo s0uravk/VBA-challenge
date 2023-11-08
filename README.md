@@ -12,3 +12,12 @@ Functionality : This Algorithm will create a column of summarized ticker symbols
 Moreover, it will calculate the greatest percentage of increase , decrease in stock price as well as greatest total volume in cells Q2,Q3 and Q4 respectively and there ticker symbols being in the cells, P2,P3 and P4 accordingly. The last but not least feature is that, it will summarize not only one but all the Worksheets available in a Workbook.
 
 Modification : A button can also be added by going to developer tab, selecting Insert in Controls and selection Button from Form Controls and then assign the name of project to that button. So all the data can be processed with just one click of a Button.
+
+Refrences : Regarding Conditioning Format part of the VBA code
+With Worksheets(1).Range("j2:k1" & row_count).FormatConditions.Add(xlCellValue, xlGreater, 0") 
+ With 
+    .Interior.ColorIndex = 4 
+ End With
+End With
+
+Intially, this code snipet was used to perform conditional formatting as per the MS excel documentation (https://learn.microsoft.com/en-us/office/vba/api/excel.formatconditions). But, it was throwing Type Mismatch Error when it was placed in a Loop to perform the same task in all the worksheets. Then, i contacted AskBCS and was suggested to declare the condition explicilty for the code to work and used it in the code.
